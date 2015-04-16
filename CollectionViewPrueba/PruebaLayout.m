@@ -8,8 +8,6 @@
 
 #import "PruebaLayout.h"
 
-static NSString * const CustomLayoutCellKind = @"CustomLayoutCellKind";
-
 @interface PruebaLayout ()
 
 @property (nonatomic, strong) NSMutableDictionary *layoutInfo;

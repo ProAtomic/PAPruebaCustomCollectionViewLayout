@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PruebaCollectionViewController.h
 //  CollectionViewPrueba
 //
 //  Created by Guillermo Saenz on 4/9/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PruebaCollectionViewController : UICollectionViewController
 
 @end
-

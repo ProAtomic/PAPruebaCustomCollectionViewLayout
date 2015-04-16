@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112B2F531AD773A100941E3E /* UIColor+ExtraColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 112B2F521AD773A100941E3E /* UIColor+ExtraColors.m */; };
 		11BDF5F51AD765DE0049E971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF5F41AD765DE0049E971 /* main.m */; };
 		11BDF5F81AD765DE0049E971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF5F71AD765DE0049E971 /* AppDelegate.m */; };
-		11BDF5FB1AD765DE0049E971 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF5FA1AD765DE0049E971 /* ViewController.m */; };
 		11BDF5FE1AD765DE0049E971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BDF5FC1AD765DE0049E971 /* Main.storyboard */; };
 		11BDF6001AD765DE0049E971 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BDF5FF1AD765DE0049E971 /* Images.xcassets */; };
 		11BDF6031AD765DE0049E971 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11BDF6011AD765DE0049E971 /* LaunchScreen.xib */; };
 		11BDF60F1AD765DE0049E971 /* CollectionViewPruebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF60E1AD765DE0049E971 /* CollectionViewPruebaTests.m */; };
+		11BDF61A1AD766C30049E971 /* PruebaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF6191AD766C30049E971 /* PruebaCollectionViewController.m */; };
+		11BDF61D1AD766F20049E971 /* PruebaLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BDF61C1AD766F20049E971 /* PruebaLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112B2F511AD773A100941E3E /* UIColor+ExtraColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ExtraColors.h"; sourceTree = "<group>"; };
+		112B2F521AD773A100941E3E /* UIColor+ExtraColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ExtraColors.m"; sourceTree = "<group>"; };
 		11BDF5EF1AD765DE0049E971 /* CollectionViewPrueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewPrueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BDF5F31AD765DE0049E971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BDF5F41AD765DE0049E971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11BDF5F61AD765DE0049E971 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11BDF5F71AD765DE0049E971 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		11BDF5F91AD765DE0049E971 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		11BDF5FA1AD765DE0049E971 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11BDF5FD1AD765DE0049E971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11BDF5FF1AD765DE0049E971 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11BDF6021AD765DE0049E971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		11BDF6081AD765DE0049E971 /* CollectionViewPruebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewPruebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BDF60D1AD765DE0049E971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BDF60E1AD765DE0049E971 /* CollectionViewPruebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewPruebaTests.m; sourceTree = "<group>"; };
+		11BDF6181AD766C30049E971 /* PruebaCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebaCollectionViewController.h; sourceTree = "<group>"; };
+		11BDF6191AD766C30049E971 /* PruebaCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PruebaCollectionViewController.m; sourceTree = "<group>"; };
+		11BDF61B1AD766F20049E971 /* PruebaLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PruebaLayout.h; sourceTree = "<group>"; };
+		11BDF61C1AD766F20049E971 /* PruebaLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PruebaLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				11BDF5F61AD765DE0049E971 /* AppDelegate.h */,
 				11BDF5F71AD765DE0049E971 /* AppDelegate.m */,
-				11BDF5F91AD765DE0049E971 /* ViewController.h */,
-				11BDF5FA1AD765DE0049E971 /* ViewController.m */,
+				112B2F511AD773A100941E3E /* UIColor+ExtraColors.h */,
+				112B2F521AD773A100941E3E /* UIColor+ExtraColors.m */,
+				11BDF6181AD766C30049E971 /* PruebaCollectionViewController.h */,
+				11BDF6191AD766C30049E971 /* PruebaCollectionViewController.m */,
+				11BDF61B1AD766F20049E971 /* PruebaLayout.h */,
+				11BDF61C1AD766F20049E971 /* PruebaLayout.m */,
 				11BDF5FC1AD765DE0049E971 /* Main.storyboard */,
 				11BDF5FF1AD765DE0049E971 /* Images.xcassets */,
 				11BDF6011AD765DE0049E971 /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BDF5FB1AD765DE0049E971 /* ViewController.m in Sources */,
+				11BDF61A1AD766C30049E971 /* PruebaCollectionViewController.m in Sources */,
 				11BDF5F81AD765DE0049E971 /* AppDelegate.m in Sources */,
+				112B2F531AD773A100941E3E /* UIColor+ExtraColors.m in Sources */,
+				11BDF61D1AD766F20049E971 /* PruebaLayout.m in Sources */,
 				11BDF5F51AD765DE0049E971 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +426,7 @@
 				11BDF6141AD765DE0049E971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11BDF6151AD765DE0049E971 /* Build configuration list for PBXNativeTarget "CollectionViewPruebaTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				11BDF6171AD765DE0049E971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

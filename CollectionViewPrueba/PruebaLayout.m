@@ -142,34 +142,33 @@
     
     CGPoint cellPoint = CGPointZero;
     
-    if (lastCellMaxX+self.spaceBetweenCellsHorizontal+cellSize.width>[self width]) {
-        cellPoint.y = lastCellMaxY+self.spaceBetweenCellsVertical;
-        if (lastCellMaxY>=_maxYUsed) {
-            cellPoint.x = self.insets.left;
-            _maxYUsed = 0;
-        }else{
-            if (MAX(_maxXUsed, lastFrame.origin.x)==lastFrame.origin.x) {
-                cellPoint.x = _maxXUsed+self.spaceBetweenCellsHorizontal;
-            }else
-            {
-                cellPoint.x = lastFrame.origin.x;
-            }
-        }
-    }else{
-        cellPoint.y = lastFrame.origin.y==0?self.insets.top:lastFrame.origin.y;
+    //Hallando el origen de la nueva celda
+    if ([self width]>= lastCellMaxX+self.spaceBetweenCellsHorizontal+cellSize.width) {
+        //Nueva celda cabe horizontalmente en la linea actual
         cellPoint.x = lastCellMaxX+self.spaceBetweenCellsHorizontal;
+        cellPoint.y = lastFrame.origin.y==0?self.insets.top:lastFrame.origin.y;
+        
+    } else {
+        //Linea siguiente
+        cellPoint.y = lastCellMaxY+self.spaceBetweenCellsVertical;
+        if (lastCellMaxY >= _maxYUsed) {
+            //Nueva linea en el origen (caso simple)
+            cellPoint.x = self.insets.left;
+            _maxYUsed = 0; //?
+            
+        } else {
+            //Hay una celda de mayor altura que creo un hueco (caso no tan simple)
+            cellPoint.x = lastFrame.origin.x;
+        }
+        
     }
     
+    //Seteando frame de nueva celda y actualizando el contentSize
     CGRect frame = CGRectMake(cellPoint.x, cellPoint.y, cellSize.width, cellSize.height);
     self.contentHeight = MAX(self.contentHeight, CGRectGetMaxY(frame)+self.insets.bottom);
     
-    if (CGRectGetMaxY(frame)>_maxYUsed) {
-        _maxYUsed = CGRectGetMaxY(frame);
-    }
-    
-    if (CGRectGetMaxX(frame)<_maxXUsed||_maxXUsed==-1) {
-        _maxXUsed = CGRectGetMaxX(frame);
-    }
+    //Actualizando auxiliares
+    _maxYUsed= MAX(CGRectGetMaxY(frame), _maxYUsed);
     
     return frame;
 }

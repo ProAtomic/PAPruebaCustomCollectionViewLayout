@@ -168,6 +168,7 @@
     self.contentHeight = MAX(self.contentHeight, CGRectGetMaxY(frame)+self.insets.bottom);
     
     //Actualizando auxiliares
+    _maxXUsed= CGRectGetMaxX(frame);
     _maxYUsed= MAX(CGRectGetMaxY(frame), _maxYUsed);
     
     return frame;

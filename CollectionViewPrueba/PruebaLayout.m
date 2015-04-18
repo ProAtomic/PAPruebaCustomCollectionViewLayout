@@ -151,14 +151,16 @@
     } else {
         //Linea siguiente
         cellPoint.y = lastCellMaxY+self.spaceBetweenCellsVertical;
+        
         if (lastCellMaxY >= _maxYUsed) {
             //Nueva linea en el origen (caso simple)
             cellPoint.x = self.insets.left;
-            _maxYUsed = 0; //?
+            _maxYUsed = 0;
+            _maxXUsed = 0;
             
         } else {
             //Hay una celda de mayor altura que creo un hueco (caso no tan simple)
-            cellPoint.x = lastFrame.origin.x;
+            cellPoint.x = _maxXUsed + self.spaceBetweenCellsHorizontal;
         }
         
     }
@@ -168,7 +170,7 @@
     self.contentHeight = MAX(self.contentHeight, CGRectGetMaxY(frame)+self.insets.bottom);
     
     //Actualizando auxiliares
-    _maxXUsed= CGRectGetMaxX(frame);
+    _maxXUsed= MAX(frame.size.width + self.insets.left, _maxXUsed);
     _maxYUsed= MAX(CGRectGetMaxY(frame), _maxYUsed);
     
     return frame;

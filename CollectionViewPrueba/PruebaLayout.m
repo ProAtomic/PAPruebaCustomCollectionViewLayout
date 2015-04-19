@@ -78,10 +78,10 @@
 }
 
 #pragma mark - Overrides
-/*
+
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
-	return YES;
-}*/
+    return !CGSizeEqualToSize(newBounds.size, self.collectionView.bounds.size);
+}
 
 - (CGSize)collectionViewContentSize{
 	return CGSizeMake([self width], self.contentHeight);
